@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackpot Win</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { text-align: center; padding: 1em; }
+        section { margin: 2em; } 
+        .deposit { border: 1px solid #ccc; padding: 10px; margin: 20px; }
+        .qr-code { width: 100px; height: 100px; }
+        .betting-options { display: flex; justify-content: space-around; }
+        .betting { border: 1px solid #ccc; padding: 10px; margin: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jackpot Win</h1>
+    </header>
+    <section>
+        <div class="deposit">
+            <h2>Deposit Section</h2>
+            <form>
+                <label for="amount">Enter Amount to Deposit:</label><br>
+                <input type="number" id="amount" name="amount" required><br>
+                <input type="submit" value="Deposit">
+            </form>
+        </div>
+    </section>
+    <section>
+        <h2>QR Code</h2>
+        <img class="qr-code" src="/path/to/qrcode.png" alt="Deposit QR Code">
+    </section>
+    <section>
+        <h2>Betting Options</h2>
+        <div class="betting-options">
+            <div class="betting">
+                <h3>Color Betting</h3>
+                <form>
+                    <input type="radio" name="color" value="red"> Red<br>
+                    <input type="radio" name="color" value="blue"> Blue<br>
+                    <input type="radio" name="color" value="green"> Green<br>
+                    <input type="submit" value="Place Bet">
+                </form>
+            </div>
+            <div class="betting">
+                <h3>Number Betting</h3>
+                <form>
+                    <label for="number">Choose a number:</label><br>
+                    <input type="number" id="number" name="number" required><br>
+                    <input type="submit" value="Place Bet">
+                </form>
+            </div>
+            <div class="betting">
+                <h3>Size Betting</h3>
+                <form>
+                    <label for="size">Choose a size:</label><br>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select><br>
+                    <input type="submit" value="Place Bet">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Admin Control Panel</h2>
+        <p>Manage users, view deposits, and control betting options.</p>
+    </footer>
+</body>
+</html>
